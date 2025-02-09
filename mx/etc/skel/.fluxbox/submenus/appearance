@@ -10,12 +10,9 @@
     [Exec] (Font) {mxfb-font} 
     [exec] (Monitors) {gkrellm}
   	[Exec] (Theme) {mx-tweak --theme}
-    [submenu] (Toolbars)
-        [exec] (Fluxbox) {toggletint2}
-        [exec] (tint2) {toggletint2}
-    [end]
     [submenu] (Wallpaper) 
     [exec] (Rotate) {mxfb-bg-rotate}
     [exec] (Separate) {mxfb-separate-backgrounds}
     [exec] (Select) {nitrogen}
+    [end]
 [end]
