@@ -4,6 +4,7 @@
    [submenu] (All Apps)
         [include] (~/.fluxbox/submenus/full_menu)
         [separator]
+        [include] (~/.fluxbox/full_menu)
         [exec] (Update)  {/usr/bin/mxfb-menu-generator}
         [exec] (Disable) {mx-tweak --other}
    [end]
