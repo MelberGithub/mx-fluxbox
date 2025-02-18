@@ -37,7 +37,7 @@ if [ "$update_check" != "$checkdate" ]; then
    
    #update tabs   
    mx23_tabs="$(grep 'modi:' $appfinder_path)"   
-   mx25_tabs=$(echo ${mx23_tabs} | sed -e 's/\\:/\\:/' | sed -e  's/\"\;/\,\\:\/usr\/share\/rofi\/appfinderexit\"\;/')
+   mx25_tabs=$(echo ${mx23_tabs} | sed -e 's/\\:/\\:/' | sed -e  's/\"\;/\,\\:\/usr\/bin\/appfinder-exit\"\;/')
  
    mx23_tabs=$(echo "${mx23_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
    mx25_tabs=$(echo "${mx25_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
@@ -123,7 +123,7 @@ CURRENTTABS="$(grep 'modi:' $appfinder_path)"
 
 CURRENTTABS1=$(echo $CURRENTTABS | sed -e "s/help:\/usr\/share\/rofi\/rofi-help_appfinder/help/g" )
 CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e "s/\\:\/usr\/bin\/app-categories/categories/g" )
-CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e "s/\\:\/usr\/share\/rofi\/appfinderexit/exit-options/g" )
+CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e "s/\\:\/usr\/bin\/appfinder-exit/exit-options/g" )
 CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e 's/modi: //g' | sed -e 's/;//g' | sed -e 's/,/ /g' | sed -e 's/"//g')
 
 tab_array=($CURRENTTABS1)
@@ -396,7 +396,7 @@ case $ret in
     NEWTABS=$(echo "${NEWTABS}" | sed -e "s/categories/\\:\/usr\/bin\/app-categories/g" )
     NEWTABS=$(echo "${NEWTABS}" | sed -e "s/help/help\:\/usr\/share\/rofi\/rofi-help_appfinder/g" )
     NEWTABS=$(echo "${NEWTABS}" | sed -e "s/,none//g" )
-    NEWTABS=$(echo "${NEWTABS}" | sed -e "s/exit-options/\\:\/usr\/share\/rofi\/appfinderexit/g" )
+    NEWTABS=$(echo "${NEWTABS}" | sed -e "s/exit-options/\\:\/usr\/bin\/appfinder-exit/g" )
 
     if [ "$NEWTABS" != "$CURRENTTABS" ]; then
         NEWTABS=$(echo "${NEWTABS}" | sed -e 's/[]$\/*[\^]/\\&/g' )
