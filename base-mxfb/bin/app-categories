@@ -10,6 +10,7 @@ GAMES=$(gettext   "Games");               GAMESi=""
 INET=$(gettext    "Internet");             INETi=""
 MMEDIA=$(gettext  "Multimedia");         MMEDIAi=""
 MXTOOLS=$(gettext "MX Tools");          MXTOOLSi=""
+MXFBTOOLS=$(gettext "MXFB Tools");          MXFBTOOLSi=""
 SETTGS=$(gettext  "Settings");           SETTGSi=""
 DEVPMNT=$(gettext "Development");       DEVPMNTi=""
 SYSTM=$(gettext   "System");              SYSTMi=""
@@ -28,6 +29,7 @@ case "$1" in
 "$DEVPMNT")  CATS="Development,TerminalEmulator" ; ICON="$DEVPMNTi" ;;
  "$MMEDIA")  CATS="Music,Sound,Video,Audio,AudioVideo,Multimedia"; ICON="$MMEDIAi" ;;
 "$MXTOOLS")  CATS="MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live"; ICON="$MXTOOLSi" ;;
+"$MXFBTOOLS")  CATS="X-MXFB-Tools"; ICON="$MXFBTOOLSi" ;;
          *)  CATS="none" ;;
 esac
 
@@ -45,6 +47,7 @@ echo -e "$GRAPH\0icon\x1fapplications-graphics"
 echo -e "$INET\0icon\x1fapplications-webbrowsers"
 echo -e "$MMEDIA\0icon\x1fapplications-multimedia"
 echo -e "$MXTOOLS\0icon\x1fmx-tools"
+echo -e "$MXFBTOOLS\0icon\x1fmxfb-category"
 echo -e "$OFFICE\0icon\x1fapplications-office"
 echo -e "$SETTGS\0icon\x1fpreferences-desktop"
 echo -e "$SYSTM\0icon\x1fapplications-system"
