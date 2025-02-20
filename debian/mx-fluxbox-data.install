@@ -9,6 +9,7 @@ base-mxfb/mx-welcome64.png usr/share/mxflux
 base-mxfb/menu/* usr/share/mxflux/menu
 base-mxfb/fluxbox_badge-symbolic.svg usr/share/icons/hicolor/scalable/places
 base-mxfb/pixmaps/mx*.png  usr/share/icons
+base-mxfb/pixmaps/mxfb*.svg  usr/share/icons/hicolor/scalable/apps
 base-mxfb/icons-tint2/*.png usr/share/mxflux/tint2
 base-mxfb/icons-tint2/*.svg usr/share/mxflux/tint2
 base-mxfb/pixmaps/system*.png  usr/local/share/icons

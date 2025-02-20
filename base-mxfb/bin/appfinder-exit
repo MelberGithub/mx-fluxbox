@@ -1,0 +1,56 @@
+#!/bin/bash
+
+TEXTDOMAINDIR=/usr/share/locale 
+export TEXTDOMAIN="mx-desktop-menu-l10n"
+
+afeo_refresh="$(gettext 'Restart Fluxbox')"
+afeo_suspend="$(gettext 'Suspend')"
+afeo_logout="$(gettext 'Log Out')"
+afeo_reboot="$(gettext 'Reboot')"
+afeo_shutdown="$(gettext 'Shutdown')"
+
+if [ x"$@" = x"$afeo_refresh" ];
+then
+killall rofi
+sleep 0.25
+fluxbox-remote restart; idesktoggle idesk refresh
+fi
+
+if [ x"$@" = x"$afeo_suspend" ];
+then
+killall rofi
+sleep 0.25
+sudo -n pm-suspend
+fi
+
+if [ x"$@" = x"$afeo_logout" ];
+then
+killall rofi
+sleep 0.25
+fluxbox-remote exit
+fi
+
+if [ x"$@" = x"$afeo_reboot" ];
+then
+killall rofi
+sleep 0.25
+sudo /sbin/reboot
+fi
+
+if [ x"$@" = x"$afeo_shutdown" ];
+then
+killall rofi
+sleep 0.25
+sudo /sbin/halt
+fi
+
+echo -e "$afeo_refresh\0icon\x1fmxflux"
+echo -e "$afeo_suspend\0icon\x1fsystem-suspend"
+echo -e "$afeo_logout\0icon\x1fsystem-log-out"
+echo -e "$afeo_reboot\0icon\x1fsystem-reboot"
+echo -e "$afeo_shutdown\0icon\x1fsystem-shutdown"
+
+
+
+
+
