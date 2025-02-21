@@ -1,7 +1,7 @@
 #!/bin/bash
 #Appfinder Settings
 #Tool to manage appfinder settings
-#Version 250218
+#Version 250221
 #License: GPL-3.0+
 
 #Changelog 
@@ -27,7 +27,7 @@ if [ -f $HOME/.config/MX-Linux/appfinder-updatecheck.conf ]; then
     source $HOME/.config/MX-Linux/appfinder-updatecheck.conf
 fi
 
-checkdate=2502-1
+checkdate=2502-2
 
 if [ "$update_check" != "$checkdate" ]; then
     
@@ -58,7 +58,7 @@ if [ "$update_check" != "$checkdate" ]; then
        fi
    done
    
-   printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/updatecheck.conf
+   printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
 
 fi
 
