@@ -8,7 +8,7 @@
         [exec] (Disable) {mx-tweak --other}
    [end]
 	[separator]
-    [exec] (Browser) {sensible-browser}
+    [exec] (Web browser) {sensible-browser}
     [exec] (File manager) {exo-open $HOME} 
     [exec] (Help) {mxfb-help}
     [submenu] (Multimedia)
