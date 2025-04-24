@@ -1,5 +1,6 @@
-mx-fluxbox (25.01.01mx23+nmu5) UNRELEASED; urgency=medium
+mx-fluxbox (25.01.01mx23+nmu6) UNRELEASED; urgency=medium
 
+  * FOR MX_25 only
   * Non-maintainer upload.
   * Beginning mxfb2025 development
   * Upgraded menu-mx (reorganized, cleaned, renamed)
@@ -8,8 +9,9 @@ mx-fluxbox (25.01.01mx23+nmu5) UNRELEASED; urgency=medium
   * Restored missing toolbars entry to Settings
   * Minor main menu alterations
   * Corrections to appfinder-settings
+  * Starting mx25 skel changes
 
- -- Dolphin Oracle <devs@mx>  Sun, 23 Feb 2025 10:46:22 -0500
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 24 Apr 2025 09:39:35 -0400
 
 mx-fluxbox (25.01.01mx23) mx; urgency=medium
 
