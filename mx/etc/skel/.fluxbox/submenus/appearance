@@ -14,5 +14,4 @@
     [exec] (Rotate) {mxfb-bg-rotate}
     [exec] (Separate) {mxfb-separate-backgrounds}
     [exec] (Select) {nitrogen}
-    [end]
 [end]

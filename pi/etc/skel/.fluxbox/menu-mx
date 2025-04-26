@@ -1,13 +1,15 @@
-#the default versions of the submenus are located in /usr/share/mxflux/menu
+the default versions of the submenus are located in /usr/share/mxflux/menu
 
 [begin] (MX Fluxbox)
-   [submenu] (All Apps)
-        [include] (~/.fluxbox/submenus/full_menu)
+   	[submenu] (All Apps)
+   		[exec] (Search) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
         [separator]
         [exec] (Update)  {/usr/bin/mxfb-menu-generator}
         [exec] (Disable) {mx-tweak --other}
-   [end]
-	[separator]
+   	[end]
+    [separator]
     [exec] (Web browser) {sensible-browser}
     [exec] (File manager) {exo-open $HOME} 
     [exec] (Help) {mxfb-help}
@@ -37,11 +39,11 @@
         [include] (~/.fluxbox/submenus/out-of-sight)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh } 
+        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
         [exec] (Suspend) {sudo 'pm-suspend'}
         [exec] (Lock) {dm-tool switch-to-greeter}
         [exit] (Logout) 
         [exec] (Reboot) {sudo /sbin/reboot} 
-        [exec] (Shutdown) {sudo /sbin/halt}
+        [exec] (Shutdown) {sudo poweroff}
     [end]
 [end]
