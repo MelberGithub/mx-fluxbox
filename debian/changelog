@@ -1,3 +1,10 @@
+mx-fluxbox (25.04.02mx25) mx; urgency=medium
+
+  * Finished mx25 skel changes
+  * Corrected Settings submenus
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 27 Apr 2025 08:50:17 -0400
+
 mx-fluxbox (25.04.01mx25) mx; urgency=medium
 
   * FOR MX_25 only
@@ -10,8 +17,6 @@ mx-fluxbox (25.04.01mx25) mx; urgency=medium
   * Minor main menu alterations
   * Corrections to appfinder-settings
   * Starting mx25 skel changes
-  * Finished mx25 skel changes
-  * Corrected Settings submenu
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 26 Apr 2025 13:20:15 -0400
 
