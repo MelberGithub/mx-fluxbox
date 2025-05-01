@@ -81,7 +81,7 @@ session.menuFile:	~/.fluxbox/menu-mx
 session.keyFile:	~/.fluxbox/keys
 session.styleOverlay:	~/.fluxbox/overlay
 session.appsFile:	~/.fluxbox/apps
-session.styleFile:	~/.fluxbox/styles/MX-comfort
+session.styleFile:	~/usr/share/mxflux/styles/MX-comfort
 
 ### MISCELLANEOUS ###
 session.screen0.focusSameHead:	false

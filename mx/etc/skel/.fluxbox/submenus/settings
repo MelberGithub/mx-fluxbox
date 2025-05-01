@@ -37,6 +37,7 @@
         [exec] (PT) {setxkbmap pt}
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
+     [end]   
      [submenu] (Toolbars)
         [exec] (Fluxbox) {toggletint2}
         [exec] (tint2) {toggletint2}

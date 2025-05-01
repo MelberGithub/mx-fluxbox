@@ -20,7 +20,7 @@ the default versions of the submenus are located in /usr/share/mxflux/menu
     [submenu] (Other)
     	[submenu] (Recent files) 
 		[include] (~/.fluxbox/submenus/recent_files_menu)
-		[exec] (Update) {~/.fluxbox/scripts/recentfiles-fbmenu}
+		[exec] (Update) {recentfiles-fbmenu}
 		[end]
 		[exec] (Screen capture) {mxfb-quickshot}
 		[exec] (Weather) {mxfb-simple-weather}
