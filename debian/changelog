@@ -1,3 +1,10 @@
+mx-fluxbox (25.05.01mx25) mx; urgency=medium
+
+  * menu adjustments
+  * style changes
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 02 May 2025 21:18:10 -0400
+
 mx-fluxbox (25.04.02mx25) mx; urgency=medium
 
   * Finished mx25 skel changes
