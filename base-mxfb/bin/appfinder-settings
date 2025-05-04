@@ -1,7 +1,7 @@
 #!/bin/bash
 #Appfinder Settings
 #Tool to manage appfinder settings
-#Version 250221
+#Version 2505-1
 #License: GPL-3.0+
 
 #Changelog 
@@ -27,7 +27,7 @@ if [ -f $HOME/.config/MX-Linux/appfinder-updatecheck.conf ]; then
     source $HOME/.config/MX-Linux/appfinder-updatecheck.conf
 fi
 
-checkdate=2502-2
+checkdate=2505-1
 
 if [ "$update_check" != "$checkdate" ]; then
     
@@ -36,29 +36,36 @@ if [ "$update_check" != "$checkdate" ]; then
     cp $appfinder_config_path $HOME/.restore/rofi/pre-"$checkdate"-mxfb-appfinder-config.rasi
    
    #update tabs   
-   mx23_tabs="$(grep 'modi:' $appfinder_path)"   
-   mx25_tabs=$(echo ${mx23_tabs} | sed -e 's/\\:/\\:/' | sed -e  's/\"\;/\,\\:\/usr\/bin\/appfinder-exit\"\;/')
+   mx23_tabs="$(grep 'modi:' $appfinder_path)"
+   
+   if [ "$mx23_tabs" != 'modi: "drun,:/usr/bin/app-categories,help:/usr/share/rofi/rofi-help_appfinder,:/usr/bin/appfinder-exit";' ]; then
+   
+       mx25_tabs=$(echo ${mx23_tabs} | sed -e 's/\\:/\\:/' | sed -e  's/\"\;/\,\\:\/usr\/bin\/appfinder-exit\"\;/')
  
-   mx23_tabs=$(echo "${mx23_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
-   mx25_tabs=$(echo "${mx25_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
-   sed -i "s/${mx23_tabs}/${mx25_tabs}/" $appfinder_path
+       mx23_tabs=$(echo "${mx23_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+       mx25_tabs=$(echo "${mx25_tabs}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+       sed -i "s/${mx23_tabs}/${mx25_tabs}/" $appfinder_path
+   
+       check_if_mx25=$(grep "appfinder-exit" $appfinder_path)
    
    #update display0.rasi
-   sed -i "s/\/\/" $HOME/.config/rofi/themes/mxrm-settings/display0.rasi
+       sed -i "s/\/\/" $HOME/.config/rofi/themes/mxrm-settings/display0.rasi
    
    #update themes
-   usrshare_path="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
+       usrshare_path="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
    
-   rasi_list=$(ls $usrshare_path/*.rasi)
-   rasi_list=($rasi_list)
-   for i in ${rasi_list[@]}; do
-       rasi_theme=$(basename $i)
-       if [ ! -f "$target_path/$rasi_theme" ]; then
-           cp $i $target_path/$rasi_theme
-       fi
-   done
+       rasi_list=$(ls $usrshare_path/*.rasi)
+       rasi_list=($rasi_list)
+       for i in ${rasi_list[@]}; do
+           rasi_theme=$(basename $i)
+           if [ ! -f "$target_path/$rasi_theme" ]; then
+               cp $i $target_path/$rasi_theme
+           fi
+       done
    
-   printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+       printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+   
+   fi
 
 fi
 
