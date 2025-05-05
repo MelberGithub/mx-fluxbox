@@ -1,3 +1,10 @@
+mx-fluxbox (25.05.01mx25+nmu1) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * Changed toggle to use fluxbox-remote reconfigure
+
+ -- Dolphin Oracle <devs@mx>  Mon, 05 May 2025 06:55:49 -0400
+
 mx-fluxbox (25.05.01mx25) mx; urgency=medium
 
   * menu adjustments
