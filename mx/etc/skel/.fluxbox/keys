@@ -41,7 +41,7 @@ Super_L :Exec rofi -show drun
 Ctrl F3 :Exec thunar /home/$USER/.fluxbox
 
 # open a dropdown terminal
-Ctrl F4 :Exec xfce4-terminal --drop-down
+none F4 :Exec xfce4-terminal --drop-down
 
 # open the MX Tools dashboard
 Ctrl F5 :Exec mx-tools
@@ -52,8 +52,8 @@ Ctrl F12 :Exec sleep 1 ; xset dpms force off
 # screen magnifier on|off
 Ctrl Alt m :Exec toggle-mx magnus
 
-# open roxterm
-Ctrl Alt t :Exec roxterm
+# open terminal
+Ctrl Alt t :Exec xfce4-terminal
 
 # change volume with keys
 Ctrl Up :Exec amixer -D pulse sset Master 5%+

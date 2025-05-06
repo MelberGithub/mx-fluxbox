@@ -67,8 +67,8 @@ volumeicon -c volumeicon-fluxbox &
 #place clipboard on the toolbar
 xfce4-clipman &
 
-#start screensaver so that lock works
-xscreensaver &
+#start screensaver 
+#xscreensaver &
 
 #put brightness controller and battery monitor on toolbar
 #tint2 has its own battery widget so this is unnecessaary
