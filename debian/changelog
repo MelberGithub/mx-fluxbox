@@ -1,8 +1,8 @@
-mx-fluxbox (25.05.01mx25+nmu2) mx; urgency=medium
+mx-fluxbox (25.05.02mx25) mx; urgency=medium
 
   * MX-25 small changes to skel (menu, startup, keys)
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 06 May 2025 13:17:50 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 09 May 2025 19:46:27 -0400
 
 mx-fluxbox (25.05.01mx25+nmu1) mx; urgency=medium
 
