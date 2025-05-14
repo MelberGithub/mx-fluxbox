@@ -1,3 +1,12 @@
+mx-fluxbox (25.05.02mx25+nmu1) mx; urgency=medium
+
+MX 25 only
+
+  * Non-maintainer upload.
+  * various changes to skel and config files
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 14 May 2025 10:01:31 -0400
+
 mx-fluxbox (25.05.02mx25) mx; urgency=medium
 
   * MX-25 small changes to skel (menu, startup, keys)
