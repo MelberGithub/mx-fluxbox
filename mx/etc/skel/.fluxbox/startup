@@ -28,7 +28,7 @@ xdg-user-dirs-update
 xdg-user-dirs-gtk-update
 
 #start a compositor if using complicated conkies
-#compton &
+#picom &
 
 # arandr genrated screenlayout 
 # before conky
@@ -106,7 +106,15 @@ fi
 
 #get last background selected
 #~/.fehbg
-(sleep 1; nitrogen --restore) &
+#restore from saved background if exists and nitrogen installed
+if [ -x "/usr/bin/nitrogen" ]; then
+    if [ -e "$HOME/.config/nitrogen/bg-saved.cfg" ]; then
+        (sleep 1; nitrogen --restore & )
+    else
+        # set default background
+        (sleep 1; nitrogen --set-auto /usr/share/backgrounds/default25.png)
+    fi
+fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
