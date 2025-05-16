@@ -1,7 +1,7 @@
 table Icon
   Caption: Software
   Icon: /usr/share/mxflux/idesk-icons/mx-packageinstaller.png
-  X: 200
+  X: 100
   Y: 100
   Command[0]: ideskrun mxpi-launcher
   Command[1]: mx-idesktool Software.lnk

@@ -1,4 +1,5 @@
 #!/bin/bash
+
 pkill wmalauncher
 
 #set up slit location
@@ -15,6 +16,7 @@ TTIPS+=" --tooltip-background-color #cacdd0"
 
 #commands for dock launchers
 
-wmalauncher --desktop-file mx-tools.desktop --tooltip-text "MX Tools" --background-color "#1d2324" --border-color "#1d2324" --hover-background-color "#29353b" --hover-border-color "#0f56d9" --window-size 48 $TTIPS & sleep 0.1
-wmalauncher --desktop-file mxfb-help.desktop --tooltip-text "Help" --background-color "#1d2324" --border-color "#1d2324" --hover-background-color "#29353b" --hover-border-color "#0f56d9" --window-size 48 $TTIPS & sleep 0.1
-wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color "#1d2324" --border-color "#1d2324" --hover-background-color "#29353b" --hover-border-color "#0f56d9" --window-size 48 --tooltip-text "Settings manager" $TTIPS & sleep 0.1
+wmalauncher --desktop-file mx-tools.desktop --background-color "#1d2324" --hover-background-color "#29353b" --border-color "#1d2324" --hover-border-color "#0f56d9" --window-size 48 --tooltip-text "MX Tools"& sleep 0.1
+wmalauncher --desktop-file mxfb-help.desktop --background-color "#1d2324" --hover-background-color "#29353b" --border-color "#1d2324" --hover-border-color "#0f56d9" --window-size 48 --tooltip-text "Fluxbox Help"& sleep 0.1
+wmalauncher --command sensible-browser https://bit.ly/2Sm1PJl --icon /usr/share/icons/mxfb-video-player.png --background-color "#1d2324" --hover-background-color "#29353b" --border-color "#1d2324" --hover-border-color "#0f56d9" --window-size 48 --tooltip-text "Fluxbox Videos"& sleep 0.1
+wmalauncher --desktop-file custom-toolbox-mxfb.desktop --background-color "#1d2324" --hover-background-color "#29353b" --border-color "#1d2324" --hover-border-color "#0f56d9" --window-size 48 --tooltip-text "Settings manager" $TTIPS& sleep 0.1

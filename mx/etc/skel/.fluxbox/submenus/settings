@@ -21,9 +21,9 @@
         [workspaces] (Workspaces)        
     [end]
     [submenu] (Display)
-    [exec] (Change) {arandr}
-    [exec](Help) {xdg-open /usr/share/mxflux/help/HELP_Display}
-    [exec] (Screensaver) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
+        [exec] (Change) {arandr}
+        [exec](Help) {xdg-open /usr/share/mxflux/help/HELP_Display}
+        [exec] (Screensaver) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
     [end]
     [submenu] (Keyboard)
         [exec] (DE) {setxkbmap de}

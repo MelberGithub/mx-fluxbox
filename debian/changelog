@@ -1,3 +1,13 @@
+mx-fluxbox (25.05.03mx25+nmu1) UNRELEASED; urgency=medium
+
+MX-25 only
+
+  * Non-maintainer upload.
+  * added video to default dock, removed from desktop
+  * small changes to menu-mx
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 16 May 2025 08:48:29 -0400
+
 mx-fluxbox (25.05.03mx25) mx; urgency=medium
 
   * change way default wallpaper is set
