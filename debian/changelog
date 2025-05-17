@@ -1,6 +1,4 @@
-mx-fluxbox (25.05.03mx25+nmu1) UNRELEASED; urgency=medium
-
-MX-25 only
+mx-fluxbox (25.05.04mx25) mx; urgency=medium
 
   * Non-maintainer upload.
   * added video to default dock, removed from desktop
