@@ -1,3 +1,10 @@
+mx-fluxbox (25.05.05mx25) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * changed video icon in dock
+
+ -- Dolphin Oracle <devs@mx>  Sun, 18 May 2025 13:53:40 -0400
+
 mx-fluxbox (25.05.04mx25) mx; urgency=medium
 
   * Non-maintainer upload.
