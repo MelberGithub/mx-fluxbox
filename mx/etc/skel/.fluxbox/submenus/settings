@@ -18,6 +18,7 @@
         [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
         [exec] (Startup) {exo-open ~/.fluxbox/startup}
         [exec] (Styles) {thunar ~/.fluxbox/styles/}
+        [exec] (Tint2 panel) {mxfb-tint2-manager}
         [workspaces] (Workspaces)        
     [end]
     [submenu] (Display)
