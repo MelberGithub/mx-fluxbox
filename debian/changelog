@@ -1,8 +1,7 @@
 mx-fluxbox (25.05.05mx25) mx; urgency=medium
 
-  * Non-maintainer upload.
   * changed video icon in dock
-  * changed default workspace name
+  * changed default workspace name 
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 31 May 2025 06:47:24 -0400
 
