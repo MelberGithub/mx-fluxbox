@@ -1,3 +1,9 @@
+mx-fluxbox (25.06.01mx25) mx; urgency=medium
+
+  * adjust location of menu icon
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 05 Jun 2025 19:43:43 -0400
+
 mx-fluxbox (25.05.05mx25) mx; urgency=medium
 
   * changed video icon in dock
